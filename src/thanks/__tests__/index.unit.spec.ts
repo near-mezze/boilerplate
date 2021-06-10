@@ -1,7 +1,6 @@
 import { Context} from "near-sdk-core"
 import { VMContext } from "near-sdk-as"
 import { Contract } from "../assembly/index"
-import { AccountId } from "../../utils"
 
 // use `logging.log()` to log to terminal
 // use `log()` to log in testing blocks
@@ -45,8 +44,8 @@ describe('List Messages', () => {
     contract.say("fifth message")
     contract.say("sixth message")
     contract.say("seventh message")
-    contract.say("eigth message")
-    contract.say("nineth message")
+    contract.say("eighth message")
+    contract.say("ninth message")
     contract.say("tenth message")
     contract.say("eleventh message")
     // from https://github.com/near/near-sdk-as/blob/master/near-mock-vm/assembly/context.ts
