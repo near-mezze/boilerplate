@@ -8,6 +8,10 @@ Brief description of your contract. This is NOT the MezzeTech Tutorial. That wil
     ┃ ┣ mezzetech/
     ┃ ┃ ┣ README.MD // <===== PUT YOUR MEZZETECH TUTORIAL HERE!
 
+
+
+READ THROUGH EVERY FILE IN THIS BOILERPLATE REPO, AND UPDATE VALUES WHERE NECESSARY, LIKE "CONTRACT_NAME"!!!
+
 ## ⚠️ Warning
 
 Any content produced by NEAR, or developer resources that NEAR provides, are for educational and inspiration purposes only.  NEAR does not encourage, induce or sanction the deployment of any such applications in violation of applicable laws or regulations.
