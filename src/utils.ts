@@ -1,3 +1,5 @@
+// Use as you see fit. May not be necessary, but may help with clean code.
+
 import { u128, Context, ContractPromise } from "near-sdk-as";
 
 /**
