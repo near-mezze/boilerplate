@@ -1,3 +1,7 @@
+THIS IS A BOILERPLATE REPO TO BE USED AS A REFERENCE WHEN BUILDING YOUR OWN NEAR-MEZZE CONTRIBUTION.
+
+Feel free to fork this repo, but some contributors may find it easier to create their own repos and branches from scratch rather than merging and stashing and all the other parts that go into filtering content by branch.
+
 # Name Of Contract
 
 Brief description of your contract. This is NOT the MezzeTech Tutorial. That will live in its own branch called `mezzetech` in its own folder specific to the `mezzetech` branch: 
@@ -11,6 +15,7 @@ Brief description of your contract. This is NOT the MezzeTech Tutorial. That wil
 
 
 READ THROUGH EVERY FILE IN THIS BOILERPLATE REPO, AND UPDATE VALUES WHERE NECESSARY, LIKE "CONTRACT_NAME"!!!
+
 
 ## ⚠️ Warning
 
