@@ -1,10 +1,12 @@
-# Thanks
+# Name Of Contract
 
-Say "thanks!" to other students of the NCD by calling _their_ instance of this contract.
+Brief description of your contract. This is NOT the MezzeTech Tutorial. That will live in its own branch called `mezzetech` in its own folder specific to the `mezzetech` branch: 
 
-You can optionally attach tokens to your message, or even leave an anonymous tip.
-
-Of course keep in mind that your signing account will be visible on the blockchain via NEAR Explorer even if you send an anonymous message.
+<!-- mezzetech branch of your contract repo -->
+  contract_root/ // ie. "thanks"
+    ┣ src/
+    ┃ ┣ mezzetech/
+    ┃ ┃ ┣ README.MD // <===== PUT YOUR MEZZETECH TUTORIAL HERE!
 
 ## ⚠️ Warning
 
@@ -13,47 +15,8 @@ Any content produced by NEAR, or developer resources that NEAR provides, are for
 ## Contract
 
 ```ts
-// ------------------------------------
-// contract initialization
-// ------------------------------------
-
-/**
- * initialize contract with owner ID and other config data
- *
- * (note: this method is called "constructor" in the singleton contract code)
- */
-function init(owner: AccountId, allow_anonymous: bool = true): void
-
-// ------------------------------------
-// public methods
-// ------------------------------------
-
-/**
- * give thanks to the owner of the contract
- * and optionally attach tokens
- */
-function say(message: string, anonymous: bool): bool
-
-// ------------------------------------
-// owner methods
-// ------------------------------------
-
-/**
- * show all messages and users
- */
-function list(): Array<Message>
-
-/**
- * generate a summary report
- */
-function summarize(): Contract
-
-/**
- * transfer received funds to owner account
- */
-function transfer(): void
+// perhaps relevant code here
 ```
-
 
 ## Usage
 
@@ -71,15 +34,13 @@ To use the contract you can do any of the following:
 _Public scripts_
 
 ```sh
-2.say-thanks.sh         # post a message saying thank you, optionally attaching NEAR tokens
-2.say-anon-thanks.sh    # post an anonymous message (otherwise same as above)
+# script.sh files used to run public scripts
 ```
 
 _Owner scripts_
 
 ```sh
-o-report.sh             # generate a summary report of the contract state
-o-transfer.sh           # transfer received funds to the owner account
+# script.sh files that only the contract owner can run
 ```
 
 ### Production
@@ -91,10 +52,10 @@ It is recommended that you deploy the contract to a subaccount under your MainNe
 
    requires the following environment variables
    - `NEAR_ENV`: Either `testnet` or `mainnet`
-   - `OWNER`: The owner of the contract and the parent account.  The contract will be deployed to `thanks.$OWNER`
+   - `OWNER`: The owner of the contract and the parent account.  The contract will be deployed to `contract_name.$OWNER`
 
 3. run `./scripts/x-remove.sh` to delete the account
 
    requires the following environment variables
    - `NEAR_ENV`: Either `testnet` or `mainnet`
-   - `OWNER`: The owner of the contract and the parent account.  The contract will be deployed to `thanks.$OWNER`
+   - `OWNER`: The owner of the contract and the parent account.  The contract will be deployed to `contract_name.$OWNER`
